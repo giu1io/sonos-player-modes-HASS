@@ -4,8 +4,7 @@
 This component creates a service `sonos_player_modes.set_mode` that lets you change playback modes on any one of your Sonos speakers. Requires the `sonos` component to be already setup.
 
 ## Install
-1. Copy the `custom_components` forlder in your HA configuration folder (or install with [HACS](https://github.com/custom-components/hacs)).
-2. Add
+1. Add
     ```
     sonos_player_modes:
     ```

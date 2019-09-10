@@ -2,7 +2,7 @@
   "domain": "sonos_player_modes",
   "name": "Sonos Player Modes",
   "documentation": "https://github.com/giu1io/sonos-player-modes-HASS",
-  "dependencies": [],
+  "dependencies": ["sonos"],
   "codeowners": ["@giu1io"],
   "requirements": ["soco>=0.17"],
   "homeassistant": "0.98.1"

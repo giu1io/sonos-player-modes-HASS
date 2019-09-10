@@ -1,16 +1,9 @@
-# Example services.yaml entry
-
 set_mode:
-  # Description of the service
   description: Sets Play Model For a Specific Sonos Speaker.
-  # Different fields that your service accepts
   fields:
-    # Key of the field
-    device_name:
-      # Description of the field
-      description: Name of the device to set
-      # Example value that can be passed for this field
-      example: 'Bedroom'
+    entity_id:
+      description: entity_id of the device to set
+      example: "media_player.bedroom"
     mode:
       description: play mode 'NORMAL', 'REPEAT_ALL', 'SHUFFLE', 'SHUFFLE_NOREPEAT'
-      example: 'NORMAL'
+      example: "NORMAL"

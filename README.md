@@ -14,4 +14,4 @@ This component creates a service `sonos_player_modes.set_mode` that lets you cha
 
 ## Service Parameters
 - `entity_id`: entity id of the speaker  (eg. `media_player.bedroom`)
-- `mode`: playback mode. Supported modes: `NORMAL`, `REPEAT_ALL`, `SHUFFLE`, `SHUFFLE_NOREPEAT`
+- `mode`: playback mode. Supported modes: `NORMAL`, `REPEAT_ALL`, `REPEAT_ONE`, `SHUFFLE`, `SHUFFLE_NOREPEAT`

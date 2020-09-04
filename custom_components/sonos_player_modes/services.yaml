@@ -5,5 +5,5 @@ set_mode:
       description: entity_id of the device to set
       example: "media_player.bedroom"
     mode:
-      description: play mode 'NORMAL', 'REPEAT_ALL', 'REPEAT_ONE', 'SHUFFLE', 'SHUFFLE_NOREPEAT'
+      description: play mode 'NORMAL', 'REPEAT_ALL', 'REPEAT_ONE', 'SHUFFLE', 'SHUFFLE_NOREPEAT', 'SHUFFLE_REPEAT_ONE'
       example: "NORMAL"

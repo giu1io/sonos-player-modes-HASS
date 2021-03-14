@@ -2,8 +2,10 @@
   "domain": "sonos_player_modes",
   "name": "Sonos Player Modes",
   "documentation": "https://github.com/giu1io/sonos-player-modes-HASS",
+  "issue_tracker": "https://github.com/giu1io/sonos-player-modes-HASS/issues",
   "dependencies": ["sonos"],
   "codeowners": ["@giu1io"],
-  "requirements": ["soco>=0.17"],
-  "homeassistant": "0.98.1"
+  "requirements": ["pysonos>=0.0.40"],
+  "homeassistant": "2021.3",
+  "version": "2.0.4"
 }

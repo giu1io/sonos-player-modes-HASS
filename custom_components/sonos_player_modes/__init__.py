@@ -31,17 +31,20 @@ class SonosPlayerData(object):
         """Returns the SoCo object of the entity that corresponds to the given entity_id"""
         data_sonos = self.hass.data[sonos.media_player.DATA_SONOS]
 
-        for entity in data_sonos.entities:
-            if entity.entity_id == entity_id:
-                break
+        if hasattr(data_sonos, 'media_player_entities'):
+            """HA 2021.5 Support"""
+            for entity in data_sonos.media_player_entities.items():
+                if entity[1].entity_id == entity_id:
+                    return entity[1].soco
+            
         else:
-            entity = None
-
-        if entity is None:
-            _LOGGER.error("No entity found for entity_id: %s", entity_id)
-            return None
-
-        return entity.soco
+            """Legacy Support"""
+            for entity in data_sonos.entities:
+                if entity.entity_id == entity_id:
+                    return entity.soco
+        
+        _LOGGER.error("No entity found for entity_id: %s", entity_id)
+        return None
 
     def set_mode(self, call):
         """Handle the service call."""

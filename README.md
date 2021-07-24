@@ -1,4 +1,9 @@
 # Sonos Player Modes
+
+## Update 2021-07-24
+
+As [noted by jeremywillans](https://github.com/giu1io/sonos-player-modes-HASS/issues/5) this no longer works in HA 2021.7+. In October of last year the core `media_player` service has been updated and has added some of the functionality ([repeat](https://www.home-assistant.io/integrations/media_player/#service-media_playerrepeat_set), [shuffle](https://www.home-assistant.io/integrations/media_player/#service-media_playershuffle_set)) that this plugin provided. This repository will be archived and it's no longer supported.
+
 ## Custom Component For Home Assistant
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 
